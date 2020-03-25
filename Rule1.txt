@@ -1,0 +1,10 @@
+accept adapter A-D
+deny adapter B
+accept adapter A,C,D
+accept ether vid 3-199 proto 0x0800
+accept ipv6 src addr 192.168.10.0-192.168.10.255 dst addr 192.168.10.0-192.168.10.255 proto TCP
+accept ip src addr 192.168.10.0-192.168.10.255 dst addr 192.168.10.0-192.168.10.255 proto TCP
+accept tcp dst port 365 src port 984
+accept udp dst port 984 src port 365
+accept icmp type 500 code 89
+accept icmpv6 type 100 code 25
